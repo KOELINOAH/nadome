@@ -1,0 +1,535 @@
+
+.header {
+
+    background-color: #ebefed;
+    display: flex;
+    align-items:center;
+   
+  }
+  
+  .img-header img{
+    flex: 1;
+    margin-right:13px;
+    
+    width: 115px;
+    height: 115px;
+  }
+  
+  .txt-header h1{
+    width: 50px;
+    height: 30px;
+    margin-top: 2px;
+    font-size: 180%;
+    color: #0b0505;
+    text-align: center;
+    font-family: Dreaming Outloud Script Pro;
+    
+    font-weight: bolder;
+    padding-bottom: 0.5cm;
+  }
+  
+  
+  
+  body {
+    background-color: #faf6f6;
+    margin: 4px;
+    font-size: large;
+  
+  }
+  
+  .main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px; /* Used in this example to enable scrolling */
+  }
+  
+  /* Add a black background color to the top navigation */
+  .topnav {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    background-color: #a4a1a1;
+    font-size: large;
+    font-style: oblique;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float:left;
+    text-decoration: none;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn, .dropdown2:hover .dropbtn2{
+    background-color: #e4e2e2;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    font-weight: bold;
+    text-align: center;
+    padding: 13px 20px;
+    float: left;
+    background-color: #a11010;
+    color: #ffffff;
+  }
+  .topnav a.middle{
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    padding: 13px 20px;
+  }
+  
+  
+  .topnav a.left1 {
+    font-weight: bold;
+    text-align: center;
+    padding: 13px 20px;
+    float: right;
+    color: #000000;
+  }
+  
+  .topnav a.left {
+    font-weight: bold;
+    text-align: center;
+    padding: 13px 20px;
+    float: right;
+    background-color: #a11010;
+    color: #ffffff;
+  }
+  
+  .dropdown, .dropdown2 {
+    font-weight: bold;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    color: #000000;
+    padding: 7px 20px;
+  }
+  
+  .dropdown .dropbtn, .dropdown2 .dropbtn2 {
+    font-weight: bold;
+    text-align: center;
+    float:left;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #000000;
+    padding: 5px 20px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  .dropdown-content, .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #fff0f0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(5, 5, 5, 0.397);
+    z-index: 1;
+  }
+  
+  .dropdown-content a, .dropdown-content2 a {
+    float: none;
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover, .dropdown-content2 a:hover, .topnav a.middle:hover, .topnav a.left1:hover {
+    background-color: #e4e2e2;
+    color: #a11010;
+  }
+  
+  .topnav a.active:hover, .topnav a.left:hover{
+    background-color: #faf9f9;
+    color:#a11010
+  }
+  
+  .dropdown:hover .dropdown-content, .dropdown2:hover .dropdown-content2 {
+    display: block;
+  }
+  
+  
+  @media screen and (max-width: 800px) {
+    .topnav a, .dropdown .dropbtn a, .dropdown2 .dropbtn2 a, .left, .left1{
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #3333;
+    }
+  }
+  
+  i{
+    color: #000000;
+  }
+  
+.row{
+    padding-top: 0.6cm;
+    background-color: #fff;
+  }
+  
+ h2{
+    text-align: center;
+    color: #a11010;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: ans-serif;
+  }
+  
+  .start{
+    padding-top: 0.6cm;
+    background-color: #fff;
+  }
+  
+  .start h2{
+    text-align: center;
+    color: #a11010;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: sans-serif;
+  }
+  
+  .intro{
+    padding: 2px 20px;
+    overflow: hidden;
+    font-size: 20px;
+    border-radius: 5%;
+    
+  }
+  
+  
+  .intro p{
+    margin-left: 0.3cm;
+    text-align:justify;
+    text-justify: inter-word;
+    color: #000000;
+  
+  }
+  
+  
+  .intro a {
+    text-align: left;
+    margin-left: 250px;
+    color: #f30b0b;
+    font-weight:bold;
+    font-style: oblique;
+    font-size: larger;
+    text-decoration: none;
+  }
+  
+  .intro i{
+    font-style: italic;
+    font-weight: bolder;
+    color: #0d0d0e;
+  }
+  
+  .intro:hover{
+    background-color: #9b9eac;
+    border-radius: 20%;
+  }
+  
+  .intro a:hover{
+    color: #a11010;
+  }
+  
+  .desc{
+    padding:8px 20px;
+    font-size: 20px;
+  
+  }
+  
+  .desc p{
+    margin-left: 0.3cm;
+    text-align: center;
+    text-justify: inter-word;
+  }
+  
+  .crd-cont{
+    display:flex;
+    text-align: center;
+  }
+  
+  .crd{
+    flex-flow: wrap;
+    padding-top: 1cm;
+    overflow: hidden;
+    border-radius: 20px;
+    border: .5px solid black;
+    margin-left: 10px;
+    background-color: #cbc8c8;
+    flex: 1;
+    transition: .3s all ease;
+  }
+  
+  .crd:hover{
+    flex: 2;
+    background-color: #0642f6;
+  
+  }
+  
+  .crd button{
+    color: #ffffff;
+    background-color: #10a19a;
+    font-weight: bold;
+    font-style: italic;
+    font-family: sans-serif;
+  
+  }
+  
+  .crd button:hover{
+    color: #a11010;
+    background-color: #ffffff;
+  }
+  
+  .crd h{
+    font-size: 40px;
+    text-align: center;
+    color: aqua;
+    
+  }
+  
+  .crd p{
+    font-size: 20px;
+    text-align: justify;
+    color: #fff;
+  }
+
+  
+  .row img{
+    margin: 0;
+    width: 80%;
+    padding-left: 10%;
+  
+  }
+
+.final{
+    padding: 2px 20px;
+    overflow: hidden;
+    font-size: 20px;
+    border-radius: 5%;
+}
+
+  .final a.meet{
+    text-align: left;
+    margin-left: 250px;
+    color: #210aee;
+    font-weight:bold;
+    font-style: oblique;
+    font-size: larger;
+    text-decoration: none;
+  }
+
+  .final:hover{
+    background-color: #9b9eac;
+    border-radius: 20%;
+  }
+  .final a.meet:hover{
+    color: #a11010;
+  }
+  
+  .reg{
+    width: 100%;
+    margin:0;
+    background-color: #97dbcb;
+    display: flex;
+  
+  }
+  
+  .reg-crd{
+  width: 100%;
+   flex-direction: column;
+   text-align: center;
+   margin: 0;
+  }
+  
+  .reg a, .reg li{
+    font-weight: bold;
+    font-style: oblique;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #060606;
+    list-style: none;
+  }
+  
+  .reg li{
+    padding-bottom: 10px;
+    
+  }
+  
+  
+  .reg p:hover, .reg img:hover{
+    color: #f70808;
+  }
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+input[type=button] {
+  background-color: #a36a07;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=button]:hover {
+  background-color: #0c08f5;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f4ecec;
+  padding: 20px;
+}
+
+
+  .quick-cont{
+    width: 100%;
+    margin:0;
+    display: flex;
+
+  }
+
+  .quick-crd{
+   width: 100%;
+   flex-direction: column;
+   text-align: center;
+   margin: 0;
+  }
+
+
+  .quick-crd li, .quick-crd a{
+    flex:2;
+    text-decoration: none;
+    list-style: none;
+    font-size: 17px;
+    font-family: Dreaming Outloud Script Pro;
+  }
+
+  
+  
+
+
+  
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+
+  .row{
+    padding-left: 3.5cm;
+  }
+  
+  /* Three columns side by side */
+  .column {
+    float: left;
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .footer{
+    display: block;
+    margin-top: 0.5cm;
+    padding-top: .2cm;
+    padding-bottom: .1cm;
+    background-color: #23e709;
+  
+  }
+  .footer h{
+    padding-left: 45%;
+    text-align: center;
+    color: #f80526;
+    font-family: Dreaming Outloud Script Pro;
+  
+    font-weight: bold;
+    font-size: 75%;
+  }
+  
+
+  
+  
